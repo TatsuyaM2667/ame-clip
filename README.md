@@ -15,6 +15,7 @@ ame-copy / ame-paste: Wayland のクリップボードに入れる / 出す(wl-c
   ame-paste                     クリップボードの中身を標準出力へ(文字を優先)
   ame-paste -t image/png        その種類で出す
   ame-paste -l                  入っている種類の一覧
+  ame-paste --watch             文字がコピーされるたびに、その中身を JSON の文字列 1 行で(終わらない。パスワード管理の「秘密」は除く)
 
 1 つの実行ファイルで、呼ばれた名前(ame-copy / ame-paste)で動きを変える。
 コンポジタの ext-data-control-v1 を使う(River 0.5 / wlroots 0.19 以降。River 0.3 には無い)。
